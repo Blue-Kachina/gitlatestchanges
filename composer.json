@@ -1,0 +1,32 @@
+{
+    "name": "bluekachina/gitlatestchanges",
+    "description": "Simplifies and standardizes seeding from JSON files named to match the table they will be populating",
+    "keywords": ["seed","json","laravel"],
+    "homepage": "https://github.com/Blue-Kachina/gitlatestchanges",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Leering",
+            "email": "matthew.leering@directimpactsolutions.com",
+            "homepage": "http://directimpactsolutions.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+      "ext-json": "*",
+        "halaxa/json-machine": "^1.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bluekachina\\gitlatestchanges\\GitLatestChangesProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "bluekachina\\gitlatestchanges\\": "src/"
+        }
+    }
+}
