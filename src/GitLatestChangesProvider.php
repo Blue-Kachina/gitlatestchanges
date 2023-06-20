@@ -34,7 +34,7 @@ class GitLatestChangesProvider extends ServiceProvider
 //        $this->loadMigrationsFrom(__DIR__.'/migrations');
 //        $this->loadViewsFrom(__DIR__.'/views', 'gitlatestchanges');
         $this->publishes([
-            __DIR__.'/../config/gitlatestchanges.php' => config_path('gitlatestchanges.php'),
+            __DIR__.'/../src/config/gitlatestchanges.php' => config_path('gitlatestchanges.php'),
         ]);
     }
 }
